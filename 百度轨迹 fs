@@ -1,0 +1,229 @@
+var CryptoJS = require('crypto-js');
+function fillZero(t=1) {
+    let e = "";
+    for (var r = 0; r < t; r++)
+        e += "0";
+    return e
+}
+function pow(spin) {
+    var t ='spin-0'
+    var e = {
+    "originStr": {
+        "spin-0": spin
+    },
+    "list": [
+        "spin-0"
+    ],
+    "version": "sha1Pow",
+    "count": 3
+}
+    const r = fillZero(e.count)
+      , i = Date.now();
+    let n, o = 0, s = "0";
+    for (; s !== r && !this.flag; )
+        s = CryptoJS.SHA1(spin + o).toString().substring(0, e.count),
+        o++;
+    return n = Date.now() - i,
+    {
+        t: n,
+        an: o - 1
+    }
+}
+console.log(pow('b5556a332cc96dacc8e7c75dd0774197e801e46f'))
+function encrypt(t, e) {
+    var r = t
+      , o = CryptoJS.enc.Utf8.parse(r)
+      , i = CryptoJS.enc.Utf8.parse(e);
+    return CryptoJS.AES.encrypt(i, o, {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.ZeroPadding
+    }).toString()
+}
+console.log(encrypt('124de5ef3463caf8','{"common":{"cl":[],"mv":[{"t":1716964295705,"fx":43,"fy":588},{"t":1716964330529,"fx":247,"fy":647},{"t":1716964330766,"fx":2,"fy":657},{"t":1716964330876,"fx":18,"fy":620},{"t":1716964331664,"fx":95,"fy":583}],"sc":[],"kb":[],"sb":[],"sd":[],"sm":[],"cr":{"screenTop":8,"screenLeft":-1920,"clientWidth":257,"clientHeight":966,"screenWidth":1920,"screenHeight":1080,"availWidth":1920,"availHeight":1040,"outerWidth":1920,"outerHeight":1040,"scrollWidth":257,"scrollHeight":257},"simu":0},"backstr":"7358-gu1a8tWzFZ6nd8KBFniGlvnfDOt5GY0qNuLf0W8fjYeVpjmWetVLnhlnf69z5UIrPJef0o1ici0ecRCl1+LTCG93I+UR7EwzJGJB1PY1clmhdWryk5JWIgDcFy5So49m5kgXqZ1zFWOyDdDnzQ9hxROFYby9hemysSrxSASnSFNq/OGr6wgvdIdMUWzTw1k5hEy4bgGUidX2jDzpUvO7E8dg3LJbCJMpg2dPBD7ovK5QBbTexbOwi2JGYHnBAqwwpGbbnU/uFfuajAu+NQs2rfozY+qDog5yx8fPcSBIA/qctzk7ItnuN+R84cOMF4P+Y/07Ck7kANrkJUI3dvCOgLxjOujP37fKgZgc5Fsd2eJUXmcMpbak0XWAI7broW8V/LlFMYUGto/eD1wryyzfAh7/Nhm+l8bA3Ld9xZLpN21HrQxSke+t+vCJNs2TyOzqlkU729eNQyjiSP0D2dmHh1U8q57sWQZ+J2m7xd80+dsiLMAf28dVxnHyah8i4H59eY5hrBfZjS02XrXPJEb2ZBfJ+XT0PiY9oxOkUiswcJX6s7Auh1YcIff4JnfZcXk9vC6LqZbixHajCtJrK5/XG4RBuRbrlEsMfBRNVKDJ6zJ53kleohBBEy0/Y95a3JiJ43lAz+M0GVNtZmSS5ILw29017Aa/YLVkQIPkNka/McM49J9sGEHbKtA5hZwkoEnIcmbWq96Pc2myKgZuVHVqb8YQ+ZZ3bCmoOhyaoSo8jOc=","captchalist":{"spin-0":{"mv":[{"t":1716964295799,"fx":43,"fy":588},{"t":1716964330806,"fx":8,"fy":611},{"t":1716964331031,"fx":4,"fy":610},{"t":1716964331767,"fx":95,"fy":583}],"cr":{"left":-16,"top":330,"width":290,"height":280},"back":{"left":52,"top":374,"width":152,"height":152}}}}'))
+function fist_eee(ac_c,backstr,p) {
+    ac_cc = Number((ac_c / 360).toFixed(2))
+    var e =  JSON.stringify( {
+    "common": {
+        "cl": [],
+        "mv": [
+{t: 1716364671959, fx: 99, fy: 626}],
+        "sc": [],
+        "kb": [],
+        "sb": [],
+        "sd": [],
+        "sm": [],
+        "cr": {
+            "screenTop": 8,
+            "screenLeft": -1920,
+            "clientWidth": 428,
+            "clientHeight": 966,
+            "screenWidth": 1920,
+            "screenHeight": 1080,
+            "availWidth": 1920,
+            "availHeight": 1040,
+            "outerWidth": 1920,
+            "outerHeight": 1040,
+            "scrollWidth": 428,
+            "scrollHeight": 428
+        },
+        "simu": 0
+    },
+    "backstr": backstr,
+    "captchalist": {
+        "spin-0": {
+            "mv": guijili(ac_c),
+            "ac_c":ac_cc,
+            "cr": {
+                "left": 69,
+                "top": 330,
+                "width": 290,
+                "height": 280
+            },
+            "back": {
+                "left": 138,
+                "top": 374,
+                "width": 152,
+                "height": 152
+            },
+            "p":p
+        }
+    }
+}
+)
+
+
+    return e
+}
+function aes_key(ass){
+    var item =  {
+    "DZ": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+    ],
+    "FB": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g"
+    ],
+    "GU": "appsapi2",
+    "JQ": [
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t"
+    ],
+    "NZ": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+    ],
+    "eR": [
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n"
+    ],
+    "o": [
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+    ],
+
+}
+    var as = ass+"appsapi2"
+    r = ass.substr(ass.length-1,1)
+    if (item.FB.includes(r)){
+        n = CryptoJS.MD5(as).toString()
+    }else if(item.eR.includes(r)){
+        n = CryptoJS.SHA1(as).toString()
+    }else if(item.JQ.includes(r)){
+        n = CryptoJS.SHA256(as).toString()
+    }else if(item.o.includes(r)){
+         n = CryptoJS.SHA512(as).toString()
+    }else if(item.DZ.includes(r)){
+        n =CryptoJS.SHA3(as, { outputLength: 256 }).toString();
+    }else if (item.NZ.includes(r)){
+         n =CryptoJS.SHA3(as, { outputLength: 512 }).toString();
+    }
+    return n.slice(0,16)
+
+}
+function guijili(ac_c){
+    var ant = ac_c;
+    var guijiLis = [];
+    var ccc = [4, 7, 5]
+    var ddd = [14, 17, 15]
+    let lis = [1182, 2278, 3362, 4433, 5521, 6611, 7111]
+    for (var i = 0; i < 5; i++) {
+        if (ac_c<100){
+            ant -= ccc[Math.floor(Math.random() * 3)];
+        }else {
+        ant -= ddd[Math.floor(Math.random() * 3)]}
+        let delay = lis.pop()
+        guijiLis.push({
+            "t": Date.now()+delay,
+            "fx": ant,
+            "fy": Math.floor(Math.random() * (565 - 400 + 1)) + 400
+        });
+    }
+    return guijiLis.reverse();
+}
+function fs( as ,guiji ,backstr,spin) {
+    key = aes_key(as)
+    p = pow(spin)
+    console.log(key)
+    vule = fist_eee(guiji, backstr,p)
+    f_fs = encrypt(key, vule)
+    vule2 = encrypt(key, JSON.stringify({
+        common_en: f_fs,
+        backstr: backstr
+    }))
+    return vule2
+}
+// console.log(fs('5329cd78',
+//  '211',
+//  '8717-ejy66UoGo7QTaf/9aEmaxrTpQ2d+tea0tVhbTCjzunUt4vrYJRifgv7smMax7aWCm5nH2LoUT2tXsGqBeUC5+1T5NrUUimO6wp+0Crc7/Pf74uFs4UkZ6cktA9CIFoAWEc8dYZqL7QHkJxU0chl5OxnE4L6Eq1kyrfV9HpR/B9NWYjkqXRUZl2GsmhwWHetKQiiNBZpNSqRocamr8+xi8tV3VSAwlCkwHyz/W0T7+yn174ugTCBBQz+bxEaBnEvXDn87KYB8S4sI2gvwGIV3FPyoGKNW9OG6XpuR3hQBw0imq2JmKVR11OQQW2TiFVZ/lKfcOGsIGGRCCg3S36XjgNSDOuLXdUwfumUGnRbmRmup+Uiy03kbgJZ2qxbE9uo1E8G1E3/Su7ZCC6QllmIZO3Clkul4lni8PphPEsQl34fDkJmpKH0KL30D1lNMKSExBZ+JbJ4hnVSzpSp3Cve9c4njLnxb2P15RRW+gr8eHfBjxVUMK7oB49YXvsfyTGmmabpx0EMVluWAGHomqlR25clJlvzGkGK8bB/F3R+5CqhTYKZYLk3St4PJAdSaVDWqivp8ryxTHAhX+bQWMOTkkxk5QiyXo34yPpKhX/LhkhUUxSU3V4G28tukkj8FTzEjFyAzCrV1UIoEAmN2Nxn+WtCmTLSXK5w9wZUJwgvAWdnkUjGxxa1yIld0aJLuqkT8EFhl1KGFdskDKYfoCUWFtq7JfNcHC6D22W5DKkOUqBE=',
+//  'c3e2aee686f3daf37897262faf5e017bdb9e30b7'))
